@@ -20,6 +20,6 @@ milano_map <- ggmap(milan)
 milano_map
 #Adding a layer with polygons representing limited traffic zones 
 milano_map <- milano_map + geom_polygon(data=utmtolat, aes(x=long, y=lat, group=group),
-                                        color=colors[9], fill=colors[6])
+                                        alpha=0.5, fill='darkred')
 milano_map <- milano_map + labs(title='Limited traffic zones in Milan', x='Longitude', y='Latitude')
 milano_map
